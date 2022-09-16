@@ -1,17 +1,22 @@
 export function getCellElementList(){
-     return document.querySelectorAll('#sellList> li')
+     return document.querySelectorAll('#cellList > li')
 }
 
-export function getCurrentElement(){
+export function getCurrentTurnElement(){
     return document.getElementById('currentTurn')
 }
 
 export function getCellElementAtIdx(index){
-    return document.querySelectorAll(`#sellList> li:nth-child(${index +1})`)
+   return document.querySelector(`#cellList > li:nth-child(${index + 1}`)
 
 
 }
 export function getGameStatusElement(){
     return document.getElementById('gameStatus')
+    
+}
+
+export function getReplayBtn(){
+    return document.getElementById('replayGame')
     
 }
